@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- FIM GOOGLE FONTS -->
-
     <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- FIM BOOTSTRAP ICONS -->
-
-    <!-- FONT AWESOME -->
+    <!-- FONT AWESOME ICONS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-    <!-- FIM FONT AWESOME -->
+    <!-- FIM FONT AWESOME ICONS -->
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
     <script src="menu.js" defer></script>
 
     <link rel="stylesheet" href="style.css">
@@ -28,108 +28,215 @@
 
 <body>
 
-<header>
-    <div class="interface">
-        <div class="logo">
-            <a href="#">
-                <img src="images/logo.png" alt="Logo Agência BRUN">
-            </a>
-        </div>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="Logo Agência BRUN">
+                </a>
+            </div> <!-- logo -->
 
-        <nav class="menu-desktop">
-            <ul>
-                <li><a href="#topo-do-site">Início</a></li>
-                <li><a href="#especialidades">Especialidades</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#portfolio">Projetos</a></li>
-            </ul>
-        </nav>
-
-        <div class="btn-contato">
-            <a href="https://wa.me/5551982241885" target="_blank" rel="noopener noreferrer">
-                <button>Contato</button>
-            </a>
-        </div>
-
-        <div class="btn-abrir-menu" id="btn-menu">
-            <i class="bi bi-list"></i>
-        </div>
-
-        <div class="menu-mobile" id="menu-mobile">
-            <div class="btn-fechar">
-                <i class="bi bi-x-lg"></i>
-            </div>
-
-            <nav>
+            <nav class="menu-desktop">
                 <ul>
                     <li><a href="#topo-do-site">Início</a></li>
                     <li><a href="#especialidades">Especialidades</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#portfolio">Projetos</a></li>
-                    <li><a href="https://wa.me/5551982241885" target="_blank">Contato</a></li>
                 </ul>
             </nav>
-        </div>
 
-        <div class="overlay-menu" id="overlay-menu"></div>
-    </div>
-</header>
+            <div class="btn-contato">
+                <a href="https://wa.me/5551982241885?text=Ol%C3%A1%2C%20vim%20pelo%20link%20de%20contato%20do%20seu%20portf%C3%B3lio
+" target="_blank" rel="noopener noreferrer">
+                    <button>Contato</button>
+                </a>
+            </div> <!-- btn-contato -->
 
-<main>
-    <!-- TODO o conteúdo principal permanece exatamente como você enviou -->
-</main>
-
-<footer>
-    <div class="interface">
-        <div class="line-footer">
-            <div class="flex">
-                <div class="logo-footer">
-                    <img src="images/logo.png" alt="Logotipo agencia BRUN">
-                </div>
-                <div class="btn-social">
-                    <a href="https://www.linkedin.com/in/matheus-brun/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                    <a href="https://github.com/MatheusRodriguesBrun" target="_blank"><button><i class="bi bi-github"></i></button></a>
-                    <a href="https://www.salesforce.com/trailblazer/ajf0iu4ehnhmn4il94" target="_blank"><button><i class="fa-brands fa-salesforce"></i></button></a>
-                </div>
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
             </div>
-        </div>
 
-        <div class="line-footer borda">
-            <p><i class="bi bi-envelope-fill"></i>
-                <a href="mailto:matheusrodriguesbrun@gmail.com">matheusrodriguesbrun@gmail.com</a>
-            </p>
-        </div>
-    </div>
-</footer>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
 
-<!-- Chatbase -->
-<script>
-(function () {
-    if (!window.chatbase || window.chatbase("getState") !== "initialized") {
-        window.chatbase = (...arguments) => {
-            if (!window.chatbase.q) window.chatbase.q = [];
-            window.chatbase.q.push(arguments);
-        };
-        window.chatbase = new Proxy(window.chatbase, {
-            get(target, prop) {
-                if (prop === "q") return target.q;
-                return (...args) => target(prop, ...args);
-            }
-        });
-    }
+                <nav>
+                    <ul>
+                        <li><a href="#topo-do-site">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portfolio">Projetos</a></li>
+                        <li><a href="https://wa.me/5551982241885?text=Ol%C3%A1%2C%20vim%20pelo%20link%20de%20contato%20do%20seu%20portf%C3%B3lio
+" target="_blank" rel="noopener noreferrer">Contato</a></li>
+                    </ul>
+                </nav>
 
-    const onLoad = function () {
-        const script = document.createElement("script");
-        script.src = "https://www.chatbase.co/embed.min.js";
-        script.id = "mg8vcrg6sxcG5jOs5y2FM";
-        script.domain = "www.chatbase.co";
-        document.body.appendChild(script);
-    };
+            </div> <!--MENU MOBILE-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div> <!-- interface -->
+    </header>
 
-    if (document.readyState === "complete") onLoad();
-    else window.addEventListener("load", onLoad);
-})();
-</script>
+    <main>
+
+        <section id="topo-do-site" class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
+                        <p>Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante,
+                            funcionalidade intuitiva e otimização para resultados, estou pronto para criar a presença
+                            online dos seus sonhos.</p>
+
+                        <div class="btn-contato">
+                            <a href="https://wa.me/5551982241885?text=Ol%C3%A1%2C%20vim%20pelo%20link%20de%20contato%20do%20seu%20portf%C3%B3lio
+" target="_blank" rel="noopener noreferrer">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div> <!-- btn-contato -->
+                    </div> <!-- txt-topo-site -->
+
+                    <div class="img-topo-site">
+                        <img src="images/pessoa.png" alt="Pessoa">
+                    </div> <!-- img-topo-do-site -->
+                </div> <!-- flex -->
+            </div> <!-- interface -->
+        </section> <!-- topo-site -->
+
+        <section id="especialidades" class="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3> Desenvolvimento Web</h3>
+                        <p>Crio sites e e-commerces responsivos e otimizados. Foco em código limpo, performance de
+                            carregamento e uma experiência de usuário (UX) que converte visitantes em clientes.</p>
+                    </div> <!-- especialidade-box -->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-openai"></i>
+                        <h3>IA & Agentes Autônomos</h3>
+                        <p>Desenvolvo soluções de Inteligência Artificial e agentes autônomos para automatizar processos
+                            complexos, analisar dados e aumentar a eficiência operacional da sua empresa.</p>
+                    </div> <!-- especialidade-box -->
+
+                    <div class="especialidades-box">
+                        <i class="fa-brands fa-salesforce"></i>
+                        <h3>Desenvolvimento Salesforce</h3>
+                        <p>Ofereço soluções Salesforce ponta a ponta. Como Administrador, otimizo a plataforma e
+                            automatizo processos. Como Desenvolvedor, crio soluções customizadas com Apex e LWC. Sou
+                            especialista na construção de Agentes de IA (Einstein Bots/Copilot) para transformar a
+                            interação com seus clientes e maximizar a produtividade.</p>
+                    </div> <!-- especialidade-box -->
+
+                </div> <!-- flex -->
+            </div> <!-- interface -->
+        </section> <!-- especialidades -->
+
+        <section id="sobre" class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/foto.png" alt="Foto perfil">
+                    </div> <!-- img-sobre -->
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER,
+                            <span>SOU MATHEUS BRUN.</span>
+                        </h2>
+                        <P>Especialista em criar soluções digitais de alta performance, meu trabalho é guiado pela
+                            atenção aos detalhes e pelo compromisso com a excelência. Minha expertise se divide em
+                            três áreas estratégicas: Desenvolvimento Web (criação de websites e lojas virtuais de
+                            alta performance), Inteligência Artificial (implementação de agentes de IA para automação
+                            inteligente) e Salesforce.</P>
+                        <P>Como desenvolvedor e administrador da plataforma CRM nº1, utilizo o poder das ferramentas
+                            Salesforce para criar desde automações complexas até Agentes de IA customizados. Meu
+                            objetivo
+                            é entregar soluções robustas e estratégicas que garantam o alcance das suas metas. Estou
+                            preparado
+                            para o próximo desafio.</P>
+                        <div class="btn-social">
+                            <a href="https://www.linkedin.com/in/matheus-brun/" target="_blank"
+                                rel="noopener noreferrer"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/MatheusRodriguesBrun" target="_blank"
+                                rel="noopener noreferrer"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.salesforce.com/trailblazer/ajf0iu4ehnhmn4il94" target="_blank"
+                                rel="noopener noreferrer"><button><i class="fa-brands fa-salesforce"></i></button></a>
+                        </div>
+
+
+                    </div> <!-- txt-sobre -->
+
+
+                </div> <!-- flex -->
+            </div> <!-- interface -->
+        </section> <!-- sobre -->
+
+        <section id="portfolio" class="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">TripAway</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/imagem1.png);">
+                        <div class="overlay">TravelsGo</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/imagem2-novo.png);">
+                        <div class="overlay">Trailhead</div>
+                    </div>
+                </div>
+            </div> <!-- interface -->
+        </section> <!-- portfolio -->
+
+        <section class="formulario" id="contato">
+            <h2 class="titulo">FALA <span>COMIGO</span></h2>
+
+            <form id="meu-formulario">
+                <input type="text" name="from_name" placeholder="Seu nome" required>
+                <input type="email" name="reply_to" placeholder="Seu email" required>
+                <input type="tel" name="phone" placeholder="Seu telefone" required>
+                <textarea name="message" placeholder="Sua mensagem" required></textarea>
+
+                <div class="btn-enviar">
+                    <button type="submit" class="btn-contato">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo.png" alt="Logotipo agencia BRUN">
+                    </div> <!-- logo footer-->
+                    <div class="btn-social">
+                        <a href="https://www.linkedin.com/in/matheus-brun/" target="_blank"
+                            rel="noopener noreferrer"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/MatheusRodriguesBrun" target="_blank"
+                            rel="noopener noreferrer"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://www.salesforce.com/trailblazer/ajf0iu4ehnhmn4il94" target="_blank"
+                            rel="noopener noreferrer"><button><i class="fa-brands fa-salesforce"></i></button></a>
+                    </div> <!--btn social-->
+                </div> <!-- flex -->
+            </div> <!--line footer-->
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:matheusrodriguesbrun@gmail.com" target="_blank"
+                        rel="noopener noreferrer">matheusrodriguesbrun@gmail.com</a></p>
+            </div> <!-- line footer-->
+        </div> <!-- div interface -->
+    </footer>
+
+    <!-- Chatbot Chatbase -->
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "mg8vcrg6sxcG5jOs5y2FM"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
 
 </body>
+
+
 </html>
